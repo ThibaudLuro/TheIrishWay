@@ -5,21 +5,21 @@
      Données
      ========================================================== */
   const PLACES = [
-    { cat: 'voir', num: '01', name: 'Trinity College', area: 'centre', desc: 'la long room et le book of kells. réserver avant.', lat: 53.3438, lng: -6.2546 },
-    { cat: 'voir', num: '02', name: 'Guinness Storehouse', area: 'the liberties', desc: 'la brasserie et son bar panoramique, le gravity bar.', lat: 53.3419, lng: -6.2867 },
-    { cat: 'voir', num: '03', name: 'Kilmainham Gaol', area: 'kilmainham', desc: 'la prison de 1916. complet vite, à réserver.', lat: 53.3419, lng: -6.3097 },
-    { cat: 'voir', num: '04', name: 'Chester Beatty', area: 'dame street', desc: 'derrière le château. gratuit.', lat: 53.3426, lng: -6.2672 },
-    { cat: 'voir', num: '05', name: "Ha'penny Bridge", area: 'centre', desc: 'le pont piéton de 1816 sur la liffey.', lat: 53.3463, lng: -6.2631 },
-    { cat: 'voir', num: '06', name: 'Phoenix Park', area: 'nord-ouest', desc: 'grand parc, avec des daims en liberté.', lat: 53.3559, lng: -6.3298 },
-    { cat: 'pub', num: '07', name: 'The Cobblestone', desc: 'session trad tous les soirs.', lat: 53.3486, lng: -6.2779 },
-    { cat: 'pub', num: '08', name: 'The Brazen Head', desc: "le plus vieux pub d'irlande, depuis 1198.", lat: 53.3446, lng: -6.2763 },
-    { cat: 'pub', num: '09', name: "O'Donoghue's", desc: 'là où les dubliners ont commencé.', lat: 53.3385, lng: -6.2526 },
-    { cat: 'pub', num: '10', name: "Mulligan's", desc: 'réputé pour sa guinness, depuis 1782.', lat: 53.3471, lng: -6.2549 },
-    { cat: 'pub', num: '11', name: 'The Long Hall', desc: 'bar victorien, pas de musique.', lat: 53.3421, lng: -6.2649 },
-    { cat: 'pub', num: '12', name: "Kehoe's", desc: 'pub victorien et son snug à l\'entrée.', lat: 53.3412, lng: -6.2593 },
-    { cat: 'sortir', num: '', name: 'Drury St', desc: 'rue de bars et de restaurants.', lat: 53.3420, lng: -6.2633 },
-    { cat: 'manger', num: '', name: 'Leo Burdock', desc: 'fish & chips.', lat: 53.3426, lng: -6.2711 },
-    { cat: 'manger', num: '', name: "Bewley's", desc: 'café et scone.', lat: 53.3409, lng: -6.2604 },
+    { cat: 'voir', num: '01', name: 'Trinity College', q: 'Trinity College Dublin', area: 'centre', desc: 'la long room et le book of kells. réserver avant.', lat: 53.3438, lng: -6.2546 },
+    { cat: 'voir', num: '02', name: 'Guinness Storehouse', q: 'Guinness Storehouse, Dublin', area: 'the liberties', desc: 'la brasserie et son bar panoramique, le gravity bar.', lat: 53.3419, lng: -6.2867 },
+    { cat: 'voir', num: '03', name: 'Kilmainham Gaol', q: 'Kilmainham Gaol, Dublin', area: 'kilmainham', desc: 'la prison de 1916. complet vite, à réserver.', lat: 53.3419, lng: -6.3097 },
+    { cat: 'voir', num: '04', name: 'Chester Beatty', q: 'Chester Beatty, Dublin Castle', area: 'dame street', desc: 'derrière le château. gratuit.', lat: 53.3426, lng: -6.2672 },
+    { cat: 'voir', num: '05', name: "Ha'penny Bridge", q: "Ha'penny Bridge, Dublin", area: 'centre', desc: 'le pont piéton de 1816 sur la liffey.', lat: 53.3463, lng: -6.2631 },
+    { cat: 'voir', num: '06', name: 'Phoenix Park', q: 'Phoenix Park, Dublin', area: 'nord-ouest', desc: 'grand parc, avec des daims en liberté.', lat: 53.3559, lng: -6.3298 },
+    { cat: 'pub', num: '07', name: 'The Cobblestone', q: 'The Cobblestone pub, Smithfield, Dublin', desc: 'session trad tous les soirs.', lat: 53.3486, lng: -6.2779 },
+    { cat: 'pub', num: '08', name: 'The Brazen Head', q: 'The Brazen Head, Dublin', desc: "le plus vieux pub d'irlande, depuis 1198.", lat: 53.3446, lng: -6.2763 },
+    { cat: 'pub', num: '09', name: "O'Donoghue's", q: "O'Donoghue's pub, Merrion Row, Dublin", desc: 'là où les dubliners ont commencé.', lat: 53.3385, lng: -6.2526 },
+    { cat: 'pub', num: '10', name: "Mulligan's", q: "Mulligan's pub, Poolbeg Street, Dublin", desc: 'réputé pour sa guinness, depuis 1782.', lat: 53.3471, lng: -6.2549 },
+    { cat: 'pub', num: '11', name: 'The Long Hall', q: 'The Long Hall pub, Dublin', desc: 'bar victorien, pas de musique.', lat: 53.3421, lng: -6.2649 },
+    { cat: 'pub', num: '12', name: "Kehoe's", q: "Kehoe's pub, South Anne Street, Dublin", desc: 'pub victorien et son snug à l\'entrée.', lat: 53.3412, lng: -6.2593 },
+    { cat: 'sortir', num: '', name: 'Drury St', q: 'Drury Street, Dublin', desc: 'rue de bars et de restaurants.', lat: 53.3420, lng: -6.2633 },
+    { cat: 'manger', num: '', name: 'Leo Burdock', q: 'Leo Burdock, Werburgh Street, Dublin', desc: 'fish & chips.', lat: 53.3426, lng: -6.2711 },
+    { cat: 'manger', num: '', name: "Bewley's", q: "Bewley's Grafton Street, Dublin", desc: 'café et scone.', lat: 53.3409, lng: -6.2604 },
   ];
 
   // Position du QG : renseigner lat/lng quand le logement est connu (null = bouton masqué).
@@ -62,6 +62,18 @@
     return n;
   };
 
+  // Lien Google Maps en mode itinéraire (départ = position actuelle de l'utilisateur)
+  const mapsUrl = (q, mode = 'walking') =>
+    `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(q)}&travelmode=${mode}`;
+  const go = (p, cls) => {
+    const a = el('a', `go go--stretch${cls ? ` ${cls}` : ''}`, p.name);
+    a.href = mapsUrl(p.q || `${p.name}, Dublin`);
+    a.target = '_blank';
+    a.rel = 'noopener';
+    a.title = `Itinéraire vers ${p.name}`;
+    return a;
+  };
+
   const $origins = document.getElementById('origins');
   const $status = document.getElementById('status');
   const $nearest = document.getElementById('nearest');
@@ -83,9 +95,9 @@
 
     // les 5 plus proches
     $nearest.replaceChildren(...list.slice(0, 5).map((p) => {
-      const li = el('li');
+      const li = el('li', 'has-go');
       const main = el('div', 'nearest__main');
-      main.append(el('span', 'nearest__cat', CAT_LABEL[p.cat]), el('span', 'display nearest__name', p.name));
+      main.append(el('span', 'nearest__cat', CAT_LABEL[p.cat]), go(p, 'display nearest__name'));
       const dist = el('span', 'nearest__dist');
       dist.append(el('b', null, p.dist), el('span', null, p.walk));
       li.append(main, dist);
@@ -96,22 +108,24 @@
     const sights = list.filter((p) => p.cat === 'voir');
     const [first, ...rest] = sights;
     $first.querySelectorAll('[data-f]').forEach((n) => { n.textContent = first[n.dataset.f]; });
+    $first.querySelector('.featured__name').replaceChildren(go(first));
     $rest.replaceChildren(...rest.map((p) => {
-      const li = el('li', 'sight');
+      const li = el('li', 'sight has-go');
       const top = el('div', 'sight__top');
       const distTxt = mobile.matches ? `${p.dist} · ${p.walk}` : p.dist;
       top.append(el('span', 'display sight__num', p.num), el('span', 'sight__dist', distTxt));
       const desc = el('p', 'sight__desc');
       desc.append(el('b', null, p.area), ` — ${p.desc}`);
-      li.append(top, el('h3', 'display sight__name', p.name), desc, el('span', 'sight__walk', p.walk));
+      li.append(top, el('h3', 'display sight__name'), desc, el('span', 'sight__walk', p.walk));
+      li.querySelector('.sight__name').append(go(p));
       return li;
     }));
 
     // pubs
     $pubs.replaceChildren(...list.filter((p) => p.cat === 'pub').map((p) => {
-      const li = el('li');
+      const li = el('li', 'has-go');
       const head = el('span', 'pub__head');
-      head.append(el('b', 'pub__dist', p.dist), ' · ', el('b', null, p.name));
+      head.append(el('b', 'pub__dist', p.dist), ' · ', go(p));
       const desc = el('span', 'pub__desc', mobile.matches ? p.desc : ` — ${p.desc}`);
       li.append(head, desc);
       return li;

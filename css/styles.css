@@ -112,6 +112,16 @@ ol { margin: 0; padding: 0; list-style: none; }
 .section--paper .outline { -webkit-text-stroke-color: var(--bottle); }
 .outline--dim { -webkit-text-stroke-color: var(--line-bottle); }
 
+/* liens itinéraire Google Maps */
+.go { color: inherit; cursor: pointer; }
+.has-go { position: relative; }
+.go--stretch::after { content: ""; position: absolute; inset: 0; }
+.has-go:hover .go { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.12em; }
+.go:focus-visible { outline: none; }
+.go--stretch:focus-visible::after { outline: 2px solid var(--gold); outline-offset: 2px; }
+.pubs-list .go { color: var(--paper-light); font-weight: 700; }
+.map a:hover .pin circle { r: 21px; }
+
 /* pastilles numérotées */
 .num {
   flex: 0 0 24px; height: 24px; border-radius: 50%;
@@ -219,7 +229,8 @@ ol { margin: 0; padding: 0; list-style: none; }
 .carte { display: flex; flex-wrap: wrap; gap: 48px 56px; align-items: flex-start; }
 .carte__side { flex: 1 1 260px; max-width: 320px; display: flex; flex-direction: column; gap: 28px; }
 .places { display: flex; flex-direction: column; gap: 8px; font-size: 14px; }
-.places li { display: flex; align-items: center; gap: 10px; cursor: default; }
+.places li { display: flex; }
+.places__link { display: flex; align-items: center; gap: 10px; }
 .places li.is-hot { text-decoration: underline; }
 .places__first-pub { margin-top: 8px; }
 
@@ -258,6 +269,7 @@ ol { margin: 0; padding: 0; list-style: none; }
 .featured__foot { display: flex; align-items: baseline; gap: 16px; border-top: 3px solid var(--bottle); padding-top: 16px; }
 .featured__dist { font-size: 44px; line-height: 1; }
 .featured__walk { font-size: 14px; color: var(--ink-soft); }
+.featured__cta { margin-left: auto; font-size: 13px; font-weight: 700; color: var(--rust); }
 
 .sights {
   flex: 2 1 520px; min-width: 0;
