@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Irish Way · Dublin</title>
+<meta name="description" content="The Irish Way, le guide de Dublin : autour de toi, la carte, à voir, les pubs, manger, excursions, playlist, vu sur instagram et infos pratiques.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&amp;family=Courier+Prime:ital,wght@0,400;0,700;1,400&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/main.js" defer></script>
+<script async src="https://www.instagram.com/embed.js"></script>
+</head>
+<body>
+
+<!-- BARRE DU HAUT (mobile) -->
+<div class="topbar">
+  <span class="display topbar__brand">The Irish Way</span>
+  <button class="topbar__burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+    <svg aria-hidden="true" width="20" height="14" viewBox="0 0 20 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M0 1 H20 M0 7 H20 M0 13 H20"/></svg>
+  </button>
+</div>
+
+<!-- HERO -->
+<header class="hero grain">
+  <div class="hero__disc" aria-hidden="true"></div>
+  <div class="hero__inner wrap">
+    <nav class="hero__nav" aria-label="Sections">
+      <span class="display hero__brand">The Irish Way</span>
+      <div class="hero__links" id="menu">
+        <a href="#proche">Autour de toi</a>
+        <a href="#carte">La carte</a>
+        <a href="#voir">À voir</a>
+        <a href="#pubs">Les pubs</a>
+        <a href="#manger">Manger</a>
+        <a href="#excursions">Excursions</a>
+        <a href="#playlist">Playlist</a>
+        <a href="#insta">Insta</a>
+        <a href="#infos">Infos</a>
+      </div>
+    </nav>
+
+    <div class="hero__top">
+      <svg class="badge" aria-hidden="true" viewBox="0 0 150 150">
+        <defs><path id="badge-circle" d="M75 75 m-56 0 a56 56 0 1 1 112 0 a56 56 0 1 1 -112 0"/></defs>
+        <circle cx="75" cy="75" r="72" fill="#E4D9BF"/>
+        <circle cx="75" cy="75" r="44" fill="none" stroke="#11281D" stroke-width="1.5"/>
+        <text font-family="Courier Prime, monospace" font-size="13" font-weight="700" fill="#11281D" letter-spacing="3"><textPath href="#badge-circle">THE IRISH WAY · DUBLIN · ÉIRE · </textPath></text>
+        <text x="75" y="86" text-anchor="middle" font-family="Archivo, sans-serif" font-weight="900" font-size="34" fill="#11281D">IE</text>
+      </svg>
+    </div>
+
+    <h1 class="display hero__title">Dublin</h1>
+
+  </div>
+</header>
+
+<!-- BANDEAU (desktop) -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span>Temple Bar ✦ Liffey ✦ Trinity ✦ Howth ✦ Dalkey ✦ Glendalough ✦&nbsp;</span>
+    <span>Temple Bar ✦ Liffey ✦ Trinity ✦ Howth ✦ Dalkey ✦ Glendalough ✦&nbsp;</span>
+  </div>
+</div>
+
+<!-- RACCOURCIS (mobile) -->
+<nav class="chips" aria-label="Raccourcis">
+  <a href="#proche" class="chip chip--active">Autour de toi</a>
+  <a href="#voir" class="chip">À voir</a>
+  <a href="#pubs" class="chip">Pubs</a>
+  <a href="#carte" class="chip">Carte</a>
+  <a href="#manger" class="chip">Manger</a>
+  <a href="#excursions" class="chip">Excursions</a>
+  <a href="#playlist" class="chip">Playlist</a>
+  <a href="#insta" class="chip">Insta</a>
+  <a href="#infos" class="chip">Infos</a>
+</nav>
+
+<main>
+
+<!-- AUTOUR DE TOI -->
+<section id="proche" class="section section--moss">
+  <div class="wrap proche">
+    <div class="proche__side">
+      <div class="heading">
+        <h2 class="display h2 h2--md">Autour de toi</h2>
+      </div>
+      <div class="origins" id="origins" role="group" aria-label="Point de départ"></div>
+      <p class="proche__status" id="status" role="status"></p>
+    </div>
+    <ol class="nearest" id="nearest"></ol>
+  </div>
+</section>
+
+<!-- 01 · LA CARTE -->
+<section id="carte" class="section section--paper">
+  <div class="wrap carte">
+    <div class="carte__side">
+      <div class="heading heading--tight">
+        <span class="display outline">01</span>
+        <h2 class="display h2 h2--sm">La carte</h2>
+      </div>
+      <ol class="places">
+        <li data-ref="1"><span class="num num--sight">1</span>Trinity College</li>
+        <li data-ref="2"><span class="num num--sight">2</span>Guinness Storehouse</li>
+        <li data-ref="3"><span class="num num--sight">3</span>Kilmainham Gaol</li>
+        <li data-ref="4"><span class="num num--sight">4</span>Chester Beatty</li>
+        <li data-ref="5"><span class="num num--sight">5</span>Ha'penny Bridge</li>
+        <li data-ref="6"><span class="num num--sight">6</span>Phoenix Park</li>
+        <li data-ref="7" class="places__first-pub"><span class="num num--pub">7</span>The Cobblestone</li>
+        <li data-ref="8"><span class="num num--pub">8</span>The Brazen Head</li>
+        <li data-ref="9"><span class="num num--pub">9</span>O'Donoghue's</li>
+        <li data-ref="10"><span class="num num--pub">10</span>Mulligan's</li>
+        <li data-ref="11"><span class="num num--pub">11</span>The Long Hall</li>
+        <li data-ref="12"><span class="num num--pub">12</span>Kehoe's</li>
+      </ol>
+    </div>
+
+    <figure class="map">
+      <svg class="map__svg" role="img" aria-label="Carte schématique du centre de Dublin avec les lieux numérotés" viewBox="0 0 1000 560">
+        <g class="map__grid" stroke="#DCCFB0" stroke-width="1">
+          <path d="M0 80 H1000 M0 160 H1000 M0 240 H1000 M0 320 H1000 M0 400 H1000 M0 480 H1000"/>
+          <path d="M100 0 V560 M200 0 V560 M300 0 V560 M400 0 V560 M500 0 V560 M600 0 V560 M700 0 V560 M800 0 V560 M900 0 V560"/>
+        </g>
+        <path d="M20 150 C40 100 170 90 230 130 C260 160 250 250 210 285 C150 300 60 295 30 260 C10 230 10 190 20 150 Z" fill="#B8C9A6" stroke="#7E9A78"/>
+        <text class="map__label" x="80" y="140" fill="#3D5A45" font-size="14">phoenix park</text>
+        <rect x="640" y="440" width="70" height="56" rx="6" fill="#B8C9A6" stroke="#7E9A78"/>
+        <text class="map__label" x="610" y="520" fill="#3D5A45" font-size="13">st stephen's green</text>
+        <path class="map__river" d="M0 318 C120 312 220 300 320 302 C420 304 470 290 540 288 C640 285 720 282 800 270 C880 258 930 246 1000 236" fill="none" stroke="#7FA6A0" stroke-width="16" stroke-linecap="round"/>
+        <text class="map__liffey" x="330" y="290" fill="#2E5752" font-size="15" font-style="italic">the liffey</text>
+        <text class="map__label" x="850" y="222" fill="#2E5752" font-size="13">→ baie de dublin</text>
+        <g class="map__pins" font-family="Archivo, sans-serif" font-weight="900" font-size="15" text-anchor="middle" dominant-baseline="central">
+          <g class="pin pin--sight" data-ref="1"><circle cx="660" cy="345" r="16"/><text x="660" y="346">1</text></g>
+          <g class="pin pin--sight" data-ref="2"><circle cx="330" cy="350" r="16"/><text x="330" y="351">2</text></g>
+          <g class="pin pin--sight" data-ref="3"><circle cx="190" cy="390" r="16"/><text x="190" y="391">3</text></g>
+          <g class="pin pin--sight" data-ref="4"><circle cx="520" cy="378" r="16"/><text x="520" y="379">4</text></g>
+          <g class="pin pin--sight" data-ref="5"><circle cx="585" cy="286" r="16"/><text x="585" y="287">5</text></g>
+          <g class="pin pin--sight" data-ref="6"><circle cx="125" cy="205" r="16"/><text x="125" y="206">6</text></g>
+          <g class="pin pin--pub" data-ref="7"><circle cx="440" cy="240" r="16"/><text x="440" y="241">7</text></g>
+          <g class="pin pin--pub" data-ref="8"><circle cx="425" cy="330" r="16"/><text x="425" y="331">8</text></g>
+          <g class="pin pin--pub" data-ref="9"><circle cx="745" cy="450" r="16"/><text x="745" y="451">9</text></g>
+          <g class="pin pin--pub" data-ref="10"><circle cx="725" cy="300" r="16"/><text x="725" y="301">10</text></g>
+          <g class="pin pin--pub" data-ref="11"><circle cx="560" cy="425" r="16"/><text x="560" y="426">11</text></g>
+          <g class="pin pin--pub" data-ref="12"><circle cx="625" cy="410" r="16"/><text x="625" y="411">12</text></g>
+        </g>
+        <g class="map__compass" stroke="#11281D" stroke-width="1.5" fill="none"><circle cx="950" cy="70" r="24"/><path d="M950 52 L956 70 L950 88 L944 70 Z" fill="#11281D"/></g>
+        <text class="map__compass" x="944" y="40" fill="#11281D" font-size="13">N</text>
+      </svg>
+    </figure>
+
+    <div class="legend">
+      <span class="legend__item"><span class="dot dot--sight"></span>à voir (1–6)</span>
+      <span class="legend__item"><span class="dot dot--pub"></span>pubs (7–12)</span>
+    </div>
+  </div>
+</section>
+
+<!-- 02 · À VOIR -->
+<section id="voir" class="section section--moss">
+  <div class="wrap stack">
+    <div class="heading">
+      <span class="eyebrow">02</span>
+      <h2 class="display h2 h2--xl gold">À voir</h2>
+    </div>
+    <div class="voir">
+      <article class="featured" id="sight-first">
+        <div class="featured__top">
+          <span class="featured__tag">LE PLUS PROCHE</span>
+          <span class="display outline featured__num" data-f="num"></span>
+        </div>
+        <div class="featured__body">
+          <h3 class="display featured__name" data-f="name"></h3>
+          <p class="featured__desc"><b data-f="area"></b> — <span data-f="desc"></span></p>
+        </div>
+        <div class="featured__foot">
+          <span class="display featured__dist" data-f="dist"></span>
+          <span class="featured__walk" data-f="walk"></span>
+        </div>
+      </article>
+      <ol class="sights" id="sight-rest"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- 03 · LES PUBS : affiche de festival -->
+<section id="pubs" class="section section--stout">
+  <div class="wrap poster">
+    <span class="eyebrow">03</span>
+    <h2 class="display h2 h2--xl brass">Les pubs</h2>
+    <div class="poster__bill display">
+      <div class="bill bill--1"><span>The Brazen Head</span><span class="bill__sep">✦</span><span>The Cobblestone</span></div>
+      <div class="bill bill--2"><span>O'Donoghue's</span><span class="bill__sep">·</span><span>Mulligan's</span></div>
+      <div class="bill bill--3"><span>The Long Hall</span><span class="bill__sep">·</span><span>Kehoe's</span></div>
+    </div>
+    <div class="pubs-list">
+      <span class="pubs-list__title">DU PLUS PROCHE AU PLUS LOIN</span>
+      <ol id="pubs-list"></ol>
+    </div>
+  </div>
+</section>
+
+<!-- 04 · MANGER : ticket de caisse -->
+<section id="manger" class="section section--paper">
+  <div class="wrap manger">
+    <div class="heading heading--tight manger__head">
+      <span class="display outline">04</span>
+      <h2 class="display h2 h2--xl">Manger</h2>
+    </div>
+    <div class="receipt">
+      <div class="receipt__head"><span class="display receipt__title">Bia · Dublin</span><span class="receipt__meta">ticket n° 0001 · baile átha cliath</span></div>
+      <div class="receipt__rule"></div>
+      <div class="receipt__item"><div class="receipt__line"><b>FULL IRISH</b><span class="receipt__dots"></span><span>MATIN</span></div></div>
+      <div class="receipt__item"><div class="receipt__line"><b>LEO BURDOCK</b><span class="receipt__dots"></span><span>MIDI</span></div></div>
+      <div class="receipt__item"><div class="receipt__line"><b>IRISH STEW</b><span class="receipt__dots"></span><span>SOIR</span></div></div>
+      <div class="receipt__item"><div class="receipt__line"><b>BEWLEY'S</b><span class="receipt__dots"></span><span>PAUSE</span></div></div>
+      <div class="receipt__rule"></div>
+      <div class="display receipt__total"><span>Total</span><span>4 adresses</span></div>
+      <svg class="receipt__barcode" aria-hidden="true" width="100%" height="40" viewBox="0 0 300 40" preserveAspectRatio="none" fill="#11281D"><rect x="0" width="4" height="40"/><rect x="7" width="2" height="40"/><rect x="12" width="6" height="40"/><rect x="21" width="2" height="40"/><rect x="26" width="3" height="40"/><rect x="33" width="7" height="40"/><rect x="43" width="2" height="40"/><rect x="48" width="4" height="40"/><rect x="56" width="2" height="40"/><rect x="61" width="6" height="40"/><rect x="70" width="3" height="40"/><rect x="76" width="2" height="40"/><rect x="82" width="5" height="40"/><rect x="90" width="2" height="40"/><rect x="96" width="7" height="40"/><rect x="106" width="3" height="40"/><rect x="112" width="2" height="40"/><rect x="118" width="5" height="40"/><rect x="126" width="2" height="40"/><rect x="131" width="4" height="40"/><rect x="139" width="6" height="40"/><rect x="148" width="2" height="40"/><rect x="154" width="3" height="40"/><rect x="160" width="7" height="40"/><rect x="170" width="2" height="40"/><rect x="176" width="4" height="40"/><rect x="183" width="2" height="40"/><rect x="189" width="6" height="40"/><rect x="198" width="3" height="40"/><rect x="204" width="2" height="40"/><rect x="210" width="5" height="40"/><rect x="218" width="2" height="40"/><rect x="224" width="7" height="40"/><rect x="234" width="3" height="40"/><rect x="240" width="2" height="40"/><rect x="246" width="5" height="40"/><rect x="254" width="2" height="40"/><rect x="259" width="4" height="40"/><rect x="267" width="6" height="40"/><rect x="276" width="2" height="40"/><rect x="282" width="3" height="40"/><rect x="288" width="7" height="40"/><rect x="297" width="3" height="40"/></svg>
+    </div>
+  </div>
+</section>
+
+<!-- 05 · EXCURSIONS : plan de ligne -->
+<section id="excursions" class="section section--bottle">
+  <div class="wrap stack">
+    <div class="excursions__head">
+      <div class="heading heading--tight">
+        <span class="display outline outline--dim">05</span>
+        <h2 class="display h2 h2--xl">Excursions</h2>
+      </div>
+      
+    </div>
+
+    <!-- desktop : ligne horizontale -->
+    <div class="line line--h">
+      <svg role="img" aria-label="Plan de ligne : Howth au nord, Dublin au centre, Dalkey au sud par le train DART ; Glendalough en bus" viewBox="0 0 1000 220">
+        <text x="0" y="22" fill="#11281D" font-size="14" font-weight="700">LIGNE DART · LE LONG DE LA CÔTE</text>
+        <path d="M80 110 H860" stroke="#2E5541" stroke-width="14" stroke-linecap="round"/>
+        <path d="M480 110 C480 160 560 180 640 180 H900" stroke="#B9822E" stroke-width="5" stroke-dasharray="10 8" fill="none"/>
+        <g font-family="Archivo, sans-serif" font-weight="900" text-anchor="middle">
+          <circle cx="80" cy="110" r="18" fill="#E4D9BF" stroke="#11281D" stroke-width="5"/>
+          <text x="80" y="72" font-size="30" fill="#11281D">HOWTH</text>
+          <text x="80" y="160" font-family="Courier Prime, monospace" font-weight="400" font-size="13" fill="#3E5246">nord · ½ journée</text>
+          <circle cx="480" cy="110" r="24" fill="#11281D"/><circle cx="480" cy="110" r="10" fill="#E4D9BF"/>
+          <text x="480" y="62" font-size="34" fill="#11281D">DUBLIN</text>
+          <circle cx="860" cy="110" r="18" fill="#E4D9BF" stroke="#11281D" stroke-width="5"/>
+          <text x="860" y="72" font-size="30" fill="#11281D">DALKEY</text>
+          <text x="860" y="150" font-family="Courier Prime, monospace" font-weight="400" font-size="13" fill="#3E5246">sud · ½ journée</text>
+          <rect x="890" y="166" width="28" height="28" fill="#B9822E"/>
+          <text x="840" y="212" font-size="22" fill="#11281D" text-anchor="end">GLENDALOUGH</text>
+          <text x="660" y="170" font-family="Courier Prime, monospace" font-weight="400" font-size="13" fill="#7A5418" text-anchor="start">bus · 1 journée</text>
+        </g>
+      </svg>
+    </div>
+
+    <!-- mobile : ligne verticale -->
+    <div class="line line--v">
+      <span class="line__title">LIGNE DART · LE LONG DE LA CÔTE</span>
+      <div class="line__body">
+        <div class="line__rail" aria-hidden="true">
+          <span class="stop"></span><span class="rail"></span>
+          <span class="stop stop--hub"></span><span class="rail"></span>
+          <span class="stop"></span><span class="rail rail--bus"></span>
+          <span class="stop stop--bus"></span>
+        </div>
+        <div class="line__stops">
+          <div><span class="display line__name">Howth</span><span class="line__note">nord · ½ journée · falaises et phoques</span></div>
+          <div><span class="display line__name">Dublin</span><span class="line__note">départ des trains</span></div>
+          <div><span class="display line__name">Dalkey</span><span class="line__note">sud · ½ journée · killiney hill</span></div>
+          <div><span class="display line__name">Glendalough</span><span class="line__note line__note--bus">en bus · 1 journée · lacs et monastère</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="trips">
+      <div class="trip"><h3 class="display trip__name">Howth</h3><p>falaises, phoques et port de pêche.</p></div>
+      <div class="trip"><h3 class="display trip__name">Dalkey</h3><p>la vue depuis killiney hill.</p></div>
+      <div class="trip trip--bus"><h3 class="display trip__name">Glendalough</h3><p>lacs, monastère, montagnes de wicklow. en tour organisé.</p></div>
+    </div>
+    <p class="excursions__more">Et en ville, si on a le temps : dégustation de whiskey (Jameson ou Teeling), Literary Pub Crawl, un match à Croke Park.</p>
+  </div>
+</section>
+
+<!-- 06 · PLAYLIST -->
+<section id="playlist" class="section section--moss playlist-section">
+  <svg class="vinyl vinyl--bg" aria-hidden="true" viewBox="0 0 240 240"><circle cx="120" cy="120" r="118" fill="#11281D"/><circle cx="120" cy="120" r="100" fill="none" stroke="#2B4A3A" stroke-width="0.6"/><circle cx="120" cy="120" r="86" fill="none" stroke="#2B4A3A" stroke-width="0.6"/><circle cx="120" cy="120" r="72" fill="none" stroke="#2B4A3A" stroke-width="0.6"/><circle cx="120" cy="120" r="58" fill="none" stroke="#2B4A3A" stroke-width="0.6"/><circle cx="120" cy="120" r="40" fill="#E4D9BF"/><circle cx="120" cy="120" r="3" fill="#11281D"/></svg>
+  <div class="wrap playlist">
+    <div class="playlist__side">
+      <div class="playlist__head">
+        <div class="heading">
+          <span class="eyebrow">06</span>
+          <h2 class="display h2 h2--xl">La playlist</h2>
+        </div>
+        <svg class="vinyl vinyl--sm" aria-hidden="true" viewBox="0 0 240 240"><circle cx="120" cy="120" r="118" fill="#11281D"/><circle cx="120" cy="120" r="86" fill="none" stroke="#2B4A3A" stroke-width="2"/><circle cx="120" cy="120" r="60" fill="none" stroke="#2B4A3A" stroke-width="2"/><circle cx="120" cy="120" r="40" fill="#E4D9BF"/><circle cx="120" cy="120" r="6" fill="#11281D"/></svg>
+      </div>
+      <a class="btn playlist__cta" href="https://open.spotify.com/search/irish%20pub%20songs" target="_blank" rel="noopener">
+        <svg aria-hidden="true" width="10" height="10" viewBox="0 0 24 24" fill="currentColor"><polygon points="6 4 20 12 6 20 6 4"/></svg>
+        Écouter sur Spotify
+      </a>
+    </div>
+    <div class="setlist">
+      <div class="setlist__head"><span>SETLIST</span><span>DUBLIN · 12 TITRES</span></div>
+      <ol class="display">
+        <li>The Boys Are Back in Town</li>
+        <li>The Rocky Road to Dublin</li>
+        <li>Boys in the Better Land</li>
+        <li>Whiskey in the Jar</li>
+        <li>Dirty Old Town</li>
+        <li>Starburster</li>
+        <li>Zombie</li>
+        <li>Where the Streets Have No Name</li>
+        <li>Molly Malone</li>
+        <li>Nothing Compares 2 U</li>
+        <li>Take Me to Church</li>
+        <li>Dreams</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 07 · VU SUR INSTAGRAM -->
+<section id="insta" class="section section--stout">
+  <div class="wrap stack">
+    <div class="insta__head">
+      <div class="heading">
+        <span class="eyebrow">07 · vu sur instagram</span>
+        <h2 class="display h2 h2--xl">Le soir</h2>
+      </div>
+    </div>
+    <div class="reels">
+      <article class="reel">
+        <div class="reel__meta"><span class="reel__who">@alternativedublin</span><h3 class="display reel__title">Où sortir danser</h3></div>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DOV30WPiG2A/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DOV30WPiG2A/" target="_blank" rel="noopener">Voir le reel sur Instagram</a></blockquote>
+      </article>
+      <article class="reel">
+        <div class="reel__meta"><span class="reel__who">@dxb_hun</span><h3 class="display reel__title">15 choses à faire</h3></div>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DMhmvj5ostY/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DMhmvj5ostY/" target="_blank" rel="noopener">Voir le reel sur Instagram</a></blockquote>
+      </article>
+      <article class="reel">
+        <div class="reel__meta"><span class="reel__who">@fernandacopenhagen</span><h3 class="display reel__title">Drury St</h3></div>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DcIsW1JofT7/" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DcIsW1JofT7/" target="_blank" rel="noopener">Voir le reel sur Instagram</a></blockquote>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 08 · INFOS : étiquette bagage -->
+<section id="infos" class="section section--paper">
+  <div class="wrap stack">
+    <div class="infos__head">
+      <span class="display outline">08</span>
+      <h2 class="display h2 h2--lg">Infos pratiques</h2>
+    </div>
+    <div class="infos">
+      <div class="info"><span class="display info__label">Vols</span><span>aéroport de dublin (dub), à 10 km au nord du centre.</span></div>
+      <div class="info"><span class="display info__label">Sur place</span><span>aircoach ou dublin express depuis l'aéroport, carte leap pour bus, luas et dart.</span></div>
+      <div class="info"><span class="display info__label">Dans le sac</span><span>veste de pluie et chaussures qui tiennent les pavés.</span></div>
+      <div class="info info--dark"><span class="display info__label">Bon à savoir</span><span>euro, prises type g, pourboire ~10 % au resto, pas au comptoir.</span></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="display footer__word">Sláinte</span>
+    <div class="footer__meta"><span>the irish way</span><span>dublin</span></div>
+  </div>
+</footer>
+
+</body>
+</html>
