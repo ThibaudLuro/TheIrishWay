@@ -195,7 +195,7 @@ ol { margin: 0; padding: 0; list-style: none; }
 .chips { display: none; }
 
 /* ==========================================================
-   AUTOUR DE TOI
+   DANS LE COIN
    ========================================================== */
 #proche { padding-top: 72px; padding-bottom: 72px; }
 .proche { display: flex; flex-wrap: wrap; gap: 40px 72px; }
@@ -517,7 +517,7 @@ blockquote.instagram-media a { text-decoration: underline; }
   .outline { font-size: 64px; -webkit-text-stroke-width: 1.5px; }
   .heading--tight { gap: 2px; }
 
-  /* autour de toi */
+  /* dans le coin */
   #proche { padding-top: 48px; padding-bottom: 48px; }
   .proche { flex-direction: column; flex-wrap: nowrap; gap: 18px; }
   .proche__side { display: contents; }
