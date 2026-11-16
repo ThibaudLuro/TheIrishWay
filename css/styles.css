@@ -430,6 +430,7 @@ ol { margin: 0; padding: 0; list-style: none; }
 }
 .btn:hover { background: var(--paper-light); text-decoration: none; }
 .playlist__cta { align-self: flex-start; }
+#playlist .h2--xl { font-size: clamp(84px, 9vw, 128px); }
 
 .setlist { flex: 0 1 520px; min-width: 0; background: var(--paper); color: var(--bottle); padding: 40px; }
 .setlist__head {
@@ -443,21 +444,6 @@ ol { margin: 0; padding: 0; list-style: none; }
   font-size: 12px; text-transform: none; color: var(--ink-soft); white-space: nowrap;
 }
 .setlist__note { margin-top: 24px; font-size: 13px; text-transform: lowercase; color: var(--ink-soft); }
-
-/* ==========================================================
-   07 · VU SUR INSTAGRAM
-   ========================================================== */
-.insta__head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px 40px; }
-.insta__intro { max-width: 380px; font-size: 14px; line-height: 1.6; color: var(--ash); }
-.reels { display: grid; grid-template-columns: repeat(auto-fill, minmax(326px, 1fr)); gap: 40px 32px; align-items: start; }
-.reel { display: flex; flex-direction: column; gap: 18px; border-top: 3px solid var(--paper-light); padding-top: 16px; }
-.reel__meta { display: flex; flex-direction: column; gap: 6px; }
-.reel__who { font-size: 13px; font-weight: 700; color: var(--gold); }
-.reel__title { margin: 0; font-size: 42px; line-height: 0.9; }
-.reel__meta p { font-size: 14px; color: var(--ash); }
-.reel .instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; max-width: 540px !important; }
-blockquote.instagram-media { background: var(--paper); color: var(--bottle); padding: 24px; font-size: 14px; }
-blockquote.instagram-media a { text-decoration: underline; }
 
 /* ==========================================================
    08 · INFOS
@@ -506,7 +492,7 @@ blockquote.instagram-media a { text-decoration: underline; }
   main { display: flex; flex-direction: column; }
   #proche { order: 1; } #voir { order: 2; } #pubs { order: 3; } #nuit { order: 4; } #manger { order: 5; }
   #carte { order: 6; } #balades { order: 7; } #excursions { order: 8; } #shopping { order: 9; }
-  #playlist { order: 10; } #insta { order: 11; } #infos { order: 12; }
+  #playlist { order: 10; } #infos { order: 11; }
 
   /* barre du haut */
   .topbar {
@@ -708,13 +694,6 @@ blockquote.instagram-media a { text-decoration: underline; }
   .setlist ol { gap: 8px; font-size: 22px; }
   .setlist__note { display: none; }
   .playlist__cta { order: 3; align-self: stretch; justify-content: center; min-height: 52px; }
-
-  /* insta */
-  .insta__head { flex-direction: column; align-items: flex-start; }
-  .insta__intro { font-size: 13px; }
-  .reels { grid-template-columns: 1fr; gap: 32px; }
-  .reel__title { font-size: 34px; }
-  .reel__meta p { font-size: 13px; }
 
   /* infos */
   #infos .stack { gap: 20px; }
