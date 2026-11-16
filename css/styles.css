@@ -438,6 +438,10 @@ ol { margin: 0; padding: 0; list-style: none; }
   border-bottom: 2px solid var(--bottle); padding-bottom: 8px; margin-bottom: 16px;
 }
 .setlist ol { display: flex; flex-direction: column; gap: 10px; font-size: 30px; line-height: 1; }
+.setlist__artist {
+  font-family: var(--mono); font-weight: 400; font-stretch: normal; font-variation-settings: normal;
+  font-size: 12px; text-transform: none; color: var(--ink-soft); white-space: nowrap;
+}
 .setlist__note { margin-top: 24px; font-size: 13px; text-transform: lowercase; color: var(--ink-soft); }
 
 /* ==========================================================
